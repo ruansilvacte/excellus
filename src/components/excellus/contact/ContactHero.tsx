@@ -1,0 +1,68 @@
+import { ChevronDown } from "lucide-react";
+import galleryImg from "@/assets/excellus-gallery-2.jpg";
+
+export default function ContactHero() {
+  return (
+    <section
+      className="relative flex items-center overflow-hidden min-h-[70svh] md:min-h-[50svh]"
+    >
+      {/* Background */}
+      <img
+        src={galleryImg}
+        alt="Interior luxuoso Excellus"
+        className="absolute inset-0 w-full h-full object-cover scale-110"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-[hsl(30_10%_5%/0.90)] via-[hsl(30_10%_5%/0.65)] to-[hsl(30_10%_5%/0.30)]" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[hsl(30_10%_5%/0.65)] via-transparent to-[hsl(30_10%_5%/0.15)]" aria-hidden="true" />
+
+      {/* Blur cinematic bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 backdrop-blur-[1px] bg-gradient-to-t from-background/30 to-transparent pointer-events-none" aria-hidden="true" />
+
+      {/* Gold line top */}
+      <div className="absolute top-0 left-0 right-0 h-px opacity-25 pointer-events-none"
+        style={{ background: "linear-gradient(90deg, transparent, hsl(44 90% 65%), transparent)" }}
+        aria-hidden="true"
+      />
+
+      <div className="relative container mx-auto px-4 md:px-6 pt-28 md:pt-36 pb-32 md:pb-12 animate-reveal">
+        <div className="flex items-center gap-3 mb-6">
+          <span className="gold-divider" />
+          <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>
+            Atendimento Premium · Orlando, FL
+          </span>
+        </div>
+
+        <h1
+          className="font-[var(--font-heading)] text-5xl sm:text-6xl md:text-7xl font-light text-white leading-[1.03] max-w-3xl"
+          style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7)" }}
+        >
+          Vamos{" "}
+          <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)" }}>
+            Transformar
+          </span>{" "}
+          Seu Espaço
+        </h1>
+
+        <p
+          className="mt-8 md:mt-6 max-w-xl text-xs md:text-lg text-white/80 leading-relaxed font-light"
+          style={{ textShadow: "0 1px 10px rgba(0,0,0,0.8)" }}
+        >
+          Atendimento premium para projetos exclusivos em Orlando.
+          Entre em contato e receba uma consultoria personalizada sem compromisso.
+        </p>
+      </div>
+
+      <a
+        href="#contato-main"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors"
+        aria-label="Ir para formulário de contato"
+      >
+        <div className="h-10 w-10 rounded-full border border-white/30 flex items-center justify-center backdrop-blur">
+          <ChevronDown className="h-4 w-4 animate-bounce" />
+        </div>
+        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Falar Conosco</span>
+      </a>
+    </section>
+  );
+}
