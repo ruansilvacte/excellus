@@ -11,7 +11,7 @@ export default function SeoHead({ slug, fallbackTitle, fallbackDescription }: Pr
   const { data: seo } = usePageSeo(slug);
 
   useEffect(() => {
-    const title = seo?.meta_title || fallbackTitle || "Navy Cleaning Solutions";
+    const title = seo?.meta_title || fallbackTitle || "Excellus Remodeling";
     const description = seo?.meta_description || fallbackDescription || "";
     const ogTitle = seo?.og_title || title;
     const ogDescription = seo?.og_description || description;
