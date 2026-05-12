@@ -1,15 +1,15 @@
 import { Quote, Star } from "lucide-react";
 
 const reviews = [
-  { name: "Sarah L.", location: "Winter Garden, FL", text: "A Excellus transformou nosso banheiro além do esperado. Equipe impecável, prazo cumprido e resultado de outro nível.", stars: 5 },
-  { name: "Marcus T.", location: "Lake Nona, FL", text: "Profissionalismo do início ao fim. O painel ripado em LED ficou exatamente como imaginávamos.", stars: 5 },
-  { name: "Emma R.", location: "Orlando, FL", text: "Sofisticação, prazo cumprido e zero dor de cabeça. Voltaremos a contratar com certeza.", stars: 5 },
+  { name: "Sarah L.", location: "Winter Garden, FL", text: "Excellus transformed our bathroom beyond expectations. An impeccable team, on-time completion, and a truly remarkable result.", stars: 5 },
+  { name: "Marcus T.", location: "Lake Nona, FL", text: "Professionalism from start to finish. The custom LED slat wall turned out exactly as we had envisioned.", stars: 5 },
+  { name: "Emma R.", location: "Orlando, FL", text: "Sophistication, on-time completion, and a completely seamless experience. We will absolutely be working with them again.", stars: 5 },
 ];
 
 const trust = [
-  { value: "120+", label: "Projetos" },
-  { value: "98%", label: "Satisfação" },
-  { value: "5★", label: "Avaliação Média" },
+  { value: "120+", label: "Projects" },
+  { value: "98%", label: "Satisfaction" },
+  { value: "5★", label: "Average Rating" },
 ];
 
 export default function ContactSocialProof() {
@@ -17,9 +17,9 @@ export default function ContactSocialProof() {
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-12">
-          <span className="eyebrow">Clientes Satisfeitos</span>
+          <span className="eyebrow">Satisfied Clients</span>
           <h2 className="mt-4 text-3xl md:text-4xl font-light text-foreground leading-tight">
-            O que dizem sobre nós
+            What Our Clients Are Saying
           </h2>
           <div className="mt-5 flex justify-center"><span className="gold-divider" /></div>
         </div>
@@ -58,7 +58,7 @@ export default function ContactSocialProof() {
         {/* CTA */}
         <div className="mt-14 text-center">
           <p className="text-base text-muted-foreground font-light mb-6">
-            Seu projeto pode ser o próximo destaque da Excellus.
+            Your project could be the next Excellus showpiece.
           </p>
           <a
             href="https://wa.me/16893063140"
@@ -67,7 +67,7 @@ export default function ContactSocialProof() {
             className="inline-flex items-center gap-2 px-8 h-14 rounded-full text-sm tracking-[0.2em] uppercase font-medium text-white transition-all hover:scale-[1.02] hover:brightness-110"
             style={{ background: "linear-gradient(135deg,#c9a227,#8b6508)", boxShadow: "0 8px 24px -8px hsl(38 60% 40%/0.5)" }}
           >
-            Falar com a Equipe
+            Speak With Our Team
           </a>
         </div>
       </div>

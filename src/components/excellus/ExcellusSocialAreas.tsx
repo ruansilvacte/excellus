@@ -39,7 +39,7 @@ export default function ExcellusSocialAreas() {
  
         {/* Areas */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase font-medium text-foreground shrink-0">Onde Atuamos</span>
+          <span className="text-[0.65rem] tracking-[0.3em] uppercase font-medium text-foreground shrink-0">Service Areas</span>
           <div className="hidden sm:block h-px w-6 bg-border" />
           <p className="text-xs md:text-sm text-muted-foreground font-light leading-relaxed">
             {areas.join(" · ")}
@@ -50,7 +50,7 @@ export default function ExcellusSocialAreas() {
  
         {/* Social links */}
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-          <span className="text-[0.65rem] tracking-[0.3em] uppercase font-medium text-foreground shrink-0">Redes Sociais</span>
+          <span className="text-[0.65rem] tracking-[0.3em] uppercase font-medium text-foreground shrink-0">Connect With Us</span>
           <div className="hidden sm:block h-px w-6 bg-border" />
           <div className="flex flex-wrap gap-3">
  

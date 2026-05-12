@@ -3,33 +3,33 @@ import { Bath, Monitor, Layers, Star, CheckCircle, Clock } from "lucide-react";
 const detailItems = [
   {
     icon: Bath,
-    title: "Banheiros e Cozinhas",
-    text: "Foco total em reformas de banheiros e cozinhas, utilizando materiais de alta qualidade para garantir durabilidade, funcionalidade e estética superior.",
+    title: "Kitchens & Baths",
+    text: "Specializing in kitchen and bath renovations, we use premium materials to ensure superior durability, functionality, and aesthetics.",
   },
   {
     icon: Monitor,
-    title: "Painéis Diferenciados",
-    text: "Especialistas na instalação de painéis ripados, de TV, travertino, mosaicos e projetos com iluminação LED, atendendo residências e comércios.",
+    title: "Distinctive Accent Panels",
+    text: "Expert installation of slatted wood, TV feature walls, travertine, mosaic, and LED-integrated panels for both residential and commercial spaces.",
   },
   {
     icon: Layers,
-    title: "Pisos e Revestimentos",
-    text: "Instalação especializada de diversos tipos de pisos: tile, vinil, laminado, porcelanato e LVP, proporcionando o acabamento perfeito para sua reforma.",
+    title: "Flooring & Tiling",
+    text: "Expert installation of a wide range of flooring, including tile, vinyl, laminate, porcelain, and LVP, delivering a flawless foundation for your renovation.",
   },
   {
     icon: Star,
-    title: "Acabamento High-End",
-    text: "Trabalho focado em clientes exigentes de alto padrão, entregando um acabamento impecável (high ticket) e sofisticação em cada detalhe.",
+    title: "High-End Finishes",
+    text: "Dedicated to discerning, high-end clients, we deliver impeccable finishes and sophistication in every detail.",
   },
   {
     icon: CheckCircle,
-    title: "Garantia e Organização",
-    text: "Oferecemos garantia de serviço e um processo de trabalho extremamente organizado, mantendo o local limpo após a conclusão da obra.",
+    title: "Guaranteed Quality & Cleanliness",
+    text: "We provide a service warranty and maintain a meticulously organized process, ensuring your space is left spotless upon project completion.",
   },
   {
     icon: Clock,
-    title: "Experiência Comprovada",
-    text: "Mais de 5 anos de experiência sólida do nosso principal profissional, garantindo técnica apurada e resultados que superam expectativas.",
+    title: "Proven Expertise",
+    text: "With over 5 years of solid experience, our lead artisan guarantees refined techniques and results that consistently exceed expectations.",
   },
 ];
 
@@ -38,13 +38,13 @@ export default function ExcellusDetails() {
     <section className="py-10 md:py-20 bg-background/50 border-y border-white/5">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <span className="eyebrow">Excelência Técnica</span>
+          <span className="eyebrow">Technical Excellence</span>
           <h2 className="mt-4 text-2xl sm:text-4xl md:text-5xl font-light text-foreground leading-[1.2]">
-            Especialidades que <span className="text-gold-gradient">Valorizam</span> Seu Imóvel
+            Specialties That <span className="text-gold-gradient">Enhance</span> Your Property
           </h2>
           <p className="mt-6 text-muted-foreground font-light text-xs md:text-base leading-relaxed">
-            Combinamos anos de experiência prática com um olhar apurado para o design contemporâneo, 
-            entregando soluções completas para quem não abre mão da qualidade.
+            We blend years of hands-on experience with a keen eye for contemporary design, 
+            delivering comprehensive solutions for those who demand uncompromising quality.
           </p>
         </div>
 

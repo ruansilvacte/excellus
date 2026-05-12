@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import aboutImg from "@/assets/excellus-about.jpg";
 
 const stats = [
-  { icon: Award, value: "+120", label: "Projetos Entregues" },
-  { icon: Users, value: "5", label: "Anos de Experiência" },
-  { icon: ThumbsUp, value: "98%", label: "Satisfação dos Clientes" },
-  { icon: BadgeCheck, value: "100%", label: "Compromisso com Qualidade" },
+  { icon: Award, value: "+120", label: "Projects Completed" },
+  { icon: Users, value: "5", label: "Years of Experience" },
+  { icon: ThumbsUp, value: "98%", label: "Client Satisfaction" },
+  { icon: BadgeCheck, value: "100%", label: "Commitment to Quality" },
 ];
 
 export default function ExcellusAbout() {
@@ -20,7 +20,7 @@ export default function ExcellusAbout() {
             <div className="relative aspect-[4/5] max-w-sm mx-auto overflow-hidden rounded-2xl shadow-[var(--shadow-luxe)]">
               <img
                 src={aboutImg}
-                alt="Interior de luxo — projeto Excellus Remodeling"
+                alt="Luxury interior — an Excellus Remodeling project"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.2s] group-hover:scale-105"
                 loading="lazy"
               />
@@ -31,15 +31,15 @@ export default function ExcellusAbout() {
 
           {/* Text content */}
           <div className="lg:col-span-7 text-center md:text-left">
-            <span className="eyebrow">Sobre Nós</span>
+            <span className="eyebrow">About Us</span>
             <h2 className="mt-5 text-2xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.1]">
-              Mais de 5 Anos de <span className="text-gold-gradient">Excelência</span> em Reformas de Luxo
+              Over 5 Years of <span className="text-gold-gradient">Excellence</span> in Luxury Remodeling
             </h2>
             <div className="mt-6 gold-divider w-12 md:w-14 mx-auto md:mx-0" />
             <p className="mt-6 text-sm md:text-lg text-muted-foreground leading-relaxed font-light">
-              A Excellus Remodeling é especializada em reformas de alto padrão em
-              Orlando, Flórida. Transformamos ambientes com design, qualidade e
-              precisão, entregando resultados que superam expectativas.
+              Excellus Remodeling specializes in high-end renovations in
+              Orlando, Florida. We transform spaces through thoughtful design, superior quality, and
+              meticulous precision, delivering results that exceed expectations.
             </p>
 
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -61,7 +61,7 @@ export default function ExcellusAbout() {
                 size="lg"
                 className="rounded-full border-primary/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary px-7 h-12 text-xs tracking-[0.2em] uppercase font-light"
               >
-                <Link to="/sobre">Conheça Nossa História</Link>
+                <Link to="/sobre">Discover Our Story</Link>
               </Button>
             </div>
           </div>

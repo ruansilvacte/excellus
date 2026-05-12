@@ -3,17 +3,17 @@ import aboutImg from "@/assets/excellus-about.jpg";
 import galleryImg from "@/assets/excellus-gallery-1.jpg";
 
 const stats = [
-  { icon: Award, value: "+120", label: "Projetos Entregues" },
-  { icon: Users, value: "5", label: "Anos de Experiência" },
-  { icon: ThumbsUp, value: "98%", label: "Satisfação dos Clientes" },
-  { icon: BadgeCheck, value: "100%", label: "Compromisso" },
+  { icon: Award, value: "+120", label: "Projects Completed" },
+  { icon: Users, value: "5", label: "Years of Experience" },
+  { icon: ThumbsUp, value: "98%", label: "Client Satisfaction" },
+  { icon: BadgeCheck, value: "100%", label: "Commitment" },
 ];
 
 const timeline = [
-  { year: "2019", title: "O Começo", desc: "Fundamos a Excellus com um sonho: elevar o padrão das reformas em Orlando. Começamos com um pequeno time, mas com grandes ambições." },
-  { year: "2021", title: "Expansão", desc: "Ampliamos nossa atuação para toda a região de Orlando, conquistando dezenas de clientes exigentes e construindo nossa reputação." },
-  { year: "2023", title: "Reconhecimento", desc: "Alcançamos a marca de 100 projetos entregues com 98% de satisfação, consolidando-nos como referência em reformas high-end na Flórida." },
-  { year: "2025", title: "Excelência Plena", desc: "Hoje, a Excellus é sinônimo de sofisticação, qualidade e atendimento premium. Nossa história continua sendo escrita, projeto por projeto." },
+  { year: "2019", title: "The Beginning", desc: "We founded Excellus with a dream: to elevate the standard of remodeling in Orlando. We began with a small team but held grand ambitions." },
+  { year: "2021", title: "Expansion", desc: "We expanded our services across the Orlando area, earning the trust of discerning clients and building our reputation." },
+  { year: "2023", title: "Recognition", desc: "We reached the milestone of 100 completed projects with 98% satisfaction, solidifying our position as a leader in high-end remodeling in Florida." },
+  { year: "2025", title: "Achieving Excellence", desc: "Today, Excellus is synonymous with sophistication, quality, and premium service. Our story continues to be written, one project at a time." },
 ];
 
 export default function AboutHistory() {
@@ -23,11 +23,11 @@ export default function AboutHistory() {
  
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-20">
-          <span className="eyebrow">Nossa História</span>
+          <span className="eyebrow">Our Story</span>
           <h2 className="mt-5 text-2xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.1]">
-            Mais de 5 Anos de{" "}
-            <span className="text-gold-gradient">Excelência</span>{" "}
-            em Reformas de Luxo
+            Over 5 Years of{" "}
+            <span className="text-gold-gradient">Excellence</span>{" "}
+            in Luxury Remodeling
           </h2>
           <div className="mt-6 flex justify-center">
             <span className="gold-divider w-12 md:w-14" />
@@ -41,7 +41,7 @@ export default function AboutHistory() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-[var(--shadow-luxe)]">
               <img
                 src={aboutImg}
-                alt="Equipe Excellus Remodeling em projeto de luxo"
+                alt="Excellus Remodeling team on a luxury project"
                 className="w-full h-full object-cover transition-transform duration-[1.4s] group-hover:scale-105"
                 loading="lazy"
               />
@@ -49,7 +49,7 @@ export default function AboutHistory() {
             </div>
             {/* Decorative floating image */}
             <div className="absolute -bottom-8 -right-8 hidden md:block w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-[var(--shadow-luxe)]">
-              <img src={galleryImg} alt="Detalhe de projeto premium" className="w-full h-full object-cover" loading="lazy" />
+              <img src={galleryImg} alt="Detail of a premium project" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute -top-4 -left-4 h-20 w-20 rounded-2xl bg-primary/10 border border-primary/20 hidden md:block" aria-hidden="true" />
           </div>
@@ -57,14 +57,14 @@ export default function AboutHistory() {
           {/* Storytelling + stats */}
           <div className="lg:pl-6">
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed font-light mb-4">
-              A Excellus Remodeling nasceu da paixão por transformar ambientes comuns em espaços extraordinários.
-              Fundada em Orlando, Flórida, somos especialistas em reformas de alto padrão que unem design
-              contemporâneo, materiais premium e execução impecável.
+              Excellus Remodeling was born from a passion for transforming ordinary environments into extraordinary spaces.
+              Founded in Orlando, Florida, we specialize in high-end remodels that unite contemporary design,
+              premium materials, and flawless execution.
             </p>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed font-light">
-              Cada projeto é tratado com o mesmo rigor de um estúdio de arquitetura de classe mundial.
-              Nossa equipe de especialistas cuida de cada detalhe, do planejamento à entrega final,
-              garantindo resultados que superam expectativas.
+              Each project is approached with the same rigor as a world-class architectural studio.
+              Our team of specialists manages every detail, from planning to final delivery,
+              ensuring results that exceed expectations.
             </p>
  
             {/* Stats */}
@@ -84,10 +84,10 @@ export default function AboutHistory() {
  
             {/* Áreas */}
             <div className="mt-8 md:mt-10 bg-white/60 backdrop-blur p-5 md:p-6 rounded-2xl border border-primary/20 shadow-sm">
-              <h4 className="text-[0.6rem] tracking-[0.3em] uppercase text-primary font-medium mb-3">Áreas de Atuação</h4>
+              <h4 className="text-[0.6rem] tracking-[0.3em] uppercase text-primary font-medium mb-3">Service Areas</h4>
               <p className="text-xs md:text-sm text-foreground/75 leading-relaxed font-light">
-                Atendemos <strong>Orlando e regiões:</strong> Winter Garden, Winter Park, Horizon West, Lake Nona,
-                Lake Mary, Z World, Gotha, Ocala, Deltona e Daytona.
+                We serve <strong>Orlando and surrounding areas:</strong> Winter Garden, Winter Park, Horizon West, Lake Nona,
+                Lake Mary, Z World, Gotha, Ocala, Deltona, and Daytona.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function AboutHistory() {
         {/* Timeline */}
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
-            <span className="eyebrow">Nossa Trajetória</span>
+            <span className="eyebrow">Our Journey</span>
           </div>
           <div className="relative">
             {/* Vertical gold line */}

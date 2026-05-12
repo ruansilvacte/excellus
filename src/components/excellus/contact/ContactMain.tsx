@@ -5,36 +5,36 @@ import { Button } from "@/components/ui/button";
 const benefits = [
   {
     icon: Clock,
-    title: "Atendimento Rápido",
-    desc: "Respondemos em até 2 horas durante o horário comercial, via WhatsApp ou e-mail.",
+    title: "Prompt Communication",
+    desc: "We respond within two hours during business hours, via WhatsApp or email.",
   },
   {
     icon: MessageSquare,
-    title: "Consultoria Especializada",
-    desc: "Nossa equipe avalia seu projeto com expertise técnica e sensibilidade estética.",
+    title: "Expert Consultation",
+    desc: "Our team evaluates your project with technical mastery and refined aesthetic sensibility.",
   },
   {
     icon: FileText,
-    title: "Orçamento Transparente",
-    desc: "Sem letras miúdas. Detalhamento completo de materiais, mão de obra e prazo.",
+    title: "Transparent Estimates",
+    desc: "A comprehensive breakdown of materials, labor, and project timeline.",
   },
   {
     icon: Settings,
-    title: "Gestão Completa",
-    desc: "Cuidamos de tudo, do planejamento à entrega, para que você não se preocupe com nada.",
+    title: "Full-Service Management",
+    desc: "We handle everything, from planning to final delivery, for your complete peace of mind.",
   },
 ];
 
 const projectTypes = [
-  "Reforma de Banheiro",
-  "Reforma de Cozinha",
-  "Pisos & Revestimentos",
+  "Bathroom Remodeling",
+  "Kitchen Remodeling",
+  "Flooring & Tiling",
   "Drywall",
-  "Pintura Premium",
-  "Painéis Decorativos",
-  "Ambientes Integrados",
-  "Projeto Completo",
-  "Outro",
+  "Premium Painting",
+  "Decorative Panels",
+  "Open-Concept Spaces",
+  "Full Home Remodel",
+  "Other",
 ];
 
 export default function ContactMain() {
@@ -53,7 +53,7 @@ export default function ContactMain() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `Olá! Gostaria de um orçamento.\n\n*Nome:* ${form.name}\n*E-mail:* ${form.email}\n*Telefone:* ${form.phone}\n*Tipo de Projeto:* ${form.projectType}\n*Mensagem:* ${form.message}`;
+    const msg = `Hello! I would like an estimate.\n\n*Name:* ${form.name}\n*Email:* ${form.email}\n*Phone:* ${form.phone}\n*Project Type:* ${form.projectType}\n*Message:* ${form.message}`;
     window.open(`https://wa.me/16893063140?text=${encodeURIComponent(msg)}`, "_blank");
     setSubmitted(true);
   };
@@ -65,17 +65,17 @@ export default function ContactMain() {
  
           {/* Left column — info & benefits */}
           <div>
-            <span className="eyebrow">Por que Escolher a Excellus?</span>
+            <span className="eyebrow">Why Choose Excellus?</span>
             <h2 className="mt-5 text-2xl md:text-4xl lg:text-5xl font-light text-foreground leading-tight">
-              Um atendimento{" "}
-              <span className="text-gold-gradient">à sua altura</span>
+              An experience{" "}
+              <span className="text-gold-gradient">worthy of your home</span>
             </h2>
             <div className="mt-5 h-px w-16 bg-gradient-to-r from-primary to-transparent" />
  
             <p className="mt-7 text-sm md:text-base text-muted-foreground leading-relaxed font-light">
-              Entendemos que cada projeto é único e merece atenção individual.
-              Desde o primeiro contato, você perceberá o diferencial de trabalhar
-              com uma equipe verdadeiramente comprometida com a excelência.
+              We recognize that every project is unique and commands personalized attention.
+              From your very first contact, you'll experience the distinction
+              of partnering with a team wholly committed to excellence.
             </p>
  
             {/* Benefits */}
@@ -102,7 +102,7 @@ export default function ContactMain() {
                 style={{ background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)" }}
               >
                 <a href="https://wa.me/16893063140" target="_blank" rel="noreferrer" className="flex items-center gap-3">
-                  Chamar no WhatsApp <ArrowRight className="h-4 w-4" />
+                  Chat on WhatsApp <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
             </div>
@@ -113,10 +113,10 @@ export default function ContactMain() {
             <div className="luxe-card p-6 md:p-10" style={{ background: "linear-gradient(160deg, hsl(0 0% 100% / 0.95), hsl(36 30% 97% / 0.85))" }}>
               <div className="mb-6 md:mb-8">
                 <h3 className="font-[var(--font-heading)] text-xl md:text-2xl font-medium text-foreground">
-                  Solicitar Orçamento
+                  Request an Estimate
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground font-light">
-                  Preencha o formulário e entraremos em contato em breve.
+                  Complete the form below, and we will be in touch shortly.
                 </p>
               </div>
 
@@ -125,14 +125,14 @@ export default function ContactMain() {
                   <div className="h-16 w-16 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mx-auto mb-5">
                     <Send className="h-7 w-7 text-primary" strokeWidth={1.3} />
                   </div>
-                  <h4 className="font-[var(--font-heading)] text-xl font-medium text-foreground">Mensagem Enviada!</h4>
-                  <p className="mt-2 text-sm text-muted-foreground font-light">Você será redirecionado ao WhatsApp. Nossa equipe retornará em breve.</p>
+                  <h4 className="font-[var(--font-heading)] text-xl font-medium text-foreground">Message Sent!</h4>
+                  <p className="mt-2 text-sm text-muted-foreground font-light">You will be redirected to WhatsApp. Our team will respond shortly.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   {/* Name */}
                   <div>
-                    <label htmlFor="contact-name" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Nome Completo *</label>
+                    <label htmlFor="contact-name" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Full Name *</label>
                     <input
                       id="contact-name"
                       name="name"
@@ -140,7 +140,7 @@ export default function ContactMain() {
                       required
                       value={form.name}
                       onChange={handleChange}
-                      placeholder="Seu nome"
+                      placeholder="Your name"
                       className="w-full h-12 px-4 rounded-xl border border-border/60 bg-white/70 backdrop-blur text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/10 transition-all font-light"
                     />
                   </div>
@@ -148,7 +148,7 @@ export default function ContactMain() {
                   {/* Email + Phone */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div>
-                      <label htmlFor="contact-email" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">E-mail *</label>
+                      <label htmlFor="contact-email" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Email *</label>
                       <input
                         id="contact-email"
                         name="email"
@@ -156,12 +156,12 @@ export default function ContactMain() {
                         required
                         value={form.email}
                         onChange={handleChange}
-                        placeholder="seu@email.com"
+                        placeholder="your@email.com"
                         className="w-full h-12 px-4 rounded-xl border border-border/60 bg-white/70 backdrop-blur text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/10 transition-all font-light"
                       />
                     </div>
                     <div>
-                      <label htmlFor="contact-phone" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Telefone *</label>
+                      <label htmlFor="contact-phone" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Phone *</label>
                       <input
                         id="contact-phone"
                         name="phone"
@@ -177,7 +177,7 @@ export default function ContactMain() {
 
                   {/* Project type */}
                   <div>
-                    <label htmlFor="contact-project" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Tipo de Projeto</label>
+                    <label htmlFor="contact-project" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Project Type</label>
                     <select
                       id="contact-project"
                       name="projectType"
@@ -185,7 +185,7 @@ export default function ContactMain() {
                       onChange={handleChange}
                       className="w-full h-12 px-4 rounded-xl border border-border/60 bg-white/70 backdrop-blur text-sm text-foreground focus:outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/10 transition-all font-light"
                     >
-                      <option value="">Selecione o tipo de projeto</option>
+                      <option value="">Select project type</option>
                       {projectTypes.map((t) => (
                         <option key={t} value={t}>{t}</option>
                       ))}
@@ -194,14 +194,14 @@ export default function ContactMain() {
 
                   {/* Message */}
                   <div>
-                    <label htmlFor="contact-message" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Mensagem</label>
+                    <label htmlFor="contact-message" className="block text-[0.68rem] tracking-[0.2em] uppercase text-muted-foreground font-medium mb-2">Message</label>
                     <textarea
                       id="contact-message"
                       name="message"
                       rows={4}
                       value={form.message}
                       onChange={handleChange}
-                      placeholder="Descreva seu projeto, localização e qualquer detalhe relevante..."
+                      placeholder="Describe your project, location, and any relevant details..."
                       className="w-full px-4 py-3 rounded-xl border border-border/60 bg-white/70 backdrop-blur text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/60 focus:ring-2 focus:ring-primary/10 transition-all font-light resize-none"
                     />
                   </div>
@@ -215,11 +215,11 @@ export default function ContactMain() {
                       boxShadow: "0 8px 24px -8px hsl(38 60% 40% / 0.5)"
                     }}
                   >
-                    Enviar Solicitação <ArrowRight className="h-4 w-4" />
+                    Send Request <ArrowRight className="h-4 w-4" />
                   </button>
 
                   <p className="text-center text-[0.68rem] text-muted-foreground font-light">
-                    Você será redirecionado ao WhatsApp para finalizar o contato.
+                    You will be redirected to WhatsApp to finalize your inquiry.
                   </p>
                 </form>
               )}

@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    title: "Reformas de Banheiros",
-    desc: "Transformamos seu banheiro em um ambiente de luxo, funcional e sofisticado.",
+    title: "Bathroom Remodeling",
+    desc: "Creating luxurious, functional, and sophisticated bathroom retreats.",
     img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1400&q=85",
   },
   {
-    title: "Instalação de Painéis",
-    desc: "Painéis ripados e internos que elevam o design e a sofisticação do seu espaço.",
+    title: "Wall Panel Installation",
+    desc: "Elevate your space with sophisticated slatted and decorative interior wall panels.",
     img: "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1400&q=85",
   },
   {
-    title: "Pisos e Acabamentos",
-    desc: "Instalação de porcelanato, LVP e laminados com perfeição e durabilidade.",
+    title: "Flooring & Finishes",
+    desc: "Expert installation of porcelain tile, LVP, and laminate for flawless, lasting beauty.",
     img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85",
   },
 ];
@@ -25,9 +25,9 @@ export default function ExcellusServices() {
     <section id="servicos" className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-8 md:mb-12">
-          <span className="eyebrow">Nossos Serviços</span>
+          <span className="eyebrow">Our Services</span>
           <h2 className="mt-4 text-2xl md:text-6xl font-light text-foreground leading-[1.05]">
-            Soluções para <span className="text-gold-gradient">Transformar</span> Seu Espaço
+            Designs to <span className="text-gold-gradient">Transform</span> Your Space
           </h2>
         </div>
 
@@ -52,7 +52,7 @@ export default function ExcellusServices() {
                 <div className="mt-4 flex items-center justify-between">
                   <span className="h-px w-8 md:w-10 bg-primary" />
                   <button
-                    aria-label={`Saiba mais sobre ${s.title}`}
+                    aria-label={`Learn more about ${s.title}`}
                     className="h-8 w-8 md:h-10 md:w-10 rounded-full bg-primary/90 text-primary-foreground flex items-center justify-center transition-all duration-500 group-hover:bg-primary group-hover:scale-110"
                   >
                     <ArrowUpRight className="h-3 w-3 md:h-4 md:w-4" />
@@ -70,7 +70,7 @@ export default function ExcellusServices() {
             size="lg"
             className="rounded-full border-primary/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary px-7 h-12 text-xs tracking-[0.2em] uppercase font-light"
           >
-            <Link to="/servicos">Ver Todos os Serviços</Link>
+            <Link to="/servicos">View All Services</Link>
           </Button>
         </div>
       </div>

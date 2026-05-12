@@ -3,18 +3,18 @@ import { Gem, ShieldCheck, Sparkles } from "lucide-react";
 const items = [
   {
     icon: Gem,
-    title: "Acabamento Impecável",
-    text: "Padrões de qualidade superiores em cada etapa do projeto.",
+    title: "Impeccable Finishes",
+    text: "Superior quality standards at every stage of the project.",
   },
   {
     icon: ShieldCheck,
-    title: "Garantia de Serviço",
-    text: "Compromisso total com prazos, qualidade e sua tranquilidade.",
+    title: "Service Guarantee",
+    text: "A total commitment to deadlines, quality, and your peace of mind.",
   },
   {
     icon: Sparkles,
-    title: "Limpeza e Organização",
-    text: "Respeito ao seu espaço com processos limpos e organizados.",
+    title: "Cleanliness & Organization",
+    text: "Respect for your space through clean and organized processes.",
   },
 ];
 
@@ -37,9 +37,9 @@ export default function ExcellusDifferentials() {
 
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="text-center max-w-5xl mx-auto mb-10 md:mb-14">
-          <span className="eyebrow">Diferenciais</span>
+          <span className="eyebrow">Our Difference</span>
           <h2 className="mt-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.1] md:whitespace-nowrap">
-            Realizamos <span className="text-gold-gradient">Reformas em Geral</span>
+            Full-Service <span className="text-gold-gradient">Home Renovations</span>
           </h2>
           <div className="mt-5 flex justify-center">
             <span className="gold-divider w-12 md:w-14" />

@@ -6,10 +6,10 @@ import logo from "@/assets/excellus-logo.png";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Sobre", href: "/sobre" },
-  { label: "Serviços", href: "/servicos" },
-  { label: "Depoimentos", href: "/depoimentos" },
-  { label: "Contato", href: "/contato" },
+  { label: "About", href: "/sobre" },
+  { label: "Services", href: "/servicos" },
+  { label: "Testimonials", href: "/depoimentos" },
+  { label: "Contact", href: "/contato" },
 ];
 
 export default function ExcellusHeader() {
@@ -50,7 +50,7 @@ export default function ExcellusHeader() {
             style={{ background: "linear-gradient(135deg, #b8860b 0%, #8b6508 100%)", backgroundColor: "#b8860b" }}
           >
             <a href="https://wa.me/16893063140" target="_blank" rel="noreferrer" className="flex items-center gap-2">
-              Solicite um Orçamento <ArrowRight className="h-3.5 w-3.5" />
+              Request a Quote <ArrowRight className="h-3.5 w-3.5" />
             </a>
           </Button>
         </div>
@@ -58,7 +58,7 @@ export default function ExcellusHeader() {
         <button
           className="md:hidden text-foreground"
           onClick={() => setOpen((v) => !v)}
-          aria-label={open ? "Fechar menu" : "Abrir menu"}
+          aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -83,13 +83,13 @@ export default function ExcellusHeader() {
                 </Link>
               );
             })}
-            <Button 
-              asChild 
+            <Button
+              asChild
               className="rounded-full mt-3 h-12 text-xs tracking-[0.2em] uppercase font-light text-white border-0 shadow-[0_8px_24px_-8px_rgba(184,134,11,0.5)]"
               style={{ background: "linear-gradient(135deg, #b8860b 0%, #8b6508 100%)", backgroundColor: "#b8860b" }}
             >
               <a href="https://wa.me/16893063140" target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
-                Solicite um Orçamento
+                Request a Quote
               </a>
             </Button>
           </nav>

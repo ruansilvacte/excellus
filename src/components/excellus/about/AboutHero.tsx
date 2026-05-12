@@ -10,7 +10,7 @@ export default function AboutHero() {
       {/* Background image */}
       <img
         src={aboutImg}
-        alt="Interior de luxo Excellus"
+        alt="Excellus luxury interior"
         className="absolute inset-0 w-full h-full object-cover scale-110"
         aria-hidden="true"
       />
@@ -39,7 +39,7 @@ export default function AboutHero() {
           <div className="flex items-center gap-3 mb-5 md:mb-6">
             <span className="gold-divider w-8 md:w-14" />
             <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>
-              Nossa Identidade
+              Our Identity
             </span>
           </div>
 
@@ -47,9 +47,9 @@ export default function AboutHero() {
             className="font-[var(--font-heading)] text-2xl md:text-6xl font-light leading-[1.1] text-white tracking-tight"
             style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7), 0 1px 6px rgba(0,0,0,0.5)" }}
           >
-            Nossa História e <br />
+            Our Story and <br />
             <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)" }}>
-              Nossos Valores
+              Our Values
             </span>
           </h1>
 
@@ -57,8 +57,8 @@ export default function AboutHero() {
             className="mt-8 md:mt-5 max-w-xl text-xs md:text-lg text-white/85 leading-relaxed font-light"
             style={{ textShadow: "0 1px 10px rgba(0,0,0,0.8)" }}
           >
-            A Excellus Remodeling é especialista em reformas de alto padrão.
-            Trabalhamos com dedicação para entregar projetos com precisão e qualidade.
+            Excellus Remodeling specializes in high-end renovations.
+            We are dedicated to delivering every project with precision and unmatched quality.
           </p>
 
           <div className="mt-14 md:mt-10 flex flex-wrap items-center gap-5">
@@ -69,7 +69,7 @@ export default function AboutHero() {
               style={{ background: "linear-gradient(135deg, #b8860b 0%, #8b6508 100%)" }}
             >
               <a href="https://wa.me/16893063140" target="_blank" rel="noreferrer" className="flex items-center gap-3">
-                Solicite um Orçamento <ArrowRight className="h-4 w-4" />
+                Request a Quote <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
           </div>
@@ -85,7 +85,7 @@ export default function AboutHero() {
         <div className="h-10 w-10 rounded-full border border-white/30 flex items-center justify-center backdrop-blur">
           <ChevronDown className="h-4 w-4 animate-bounce" />
         </div>
-        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Explorar</span>
+        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Explore</span>
       </a>
     </section>
   );
