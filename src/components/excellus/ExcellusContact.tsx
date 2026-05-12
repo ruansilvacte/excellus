@@ -9,18 +9,18 @@ import { toast } from "@/hooks/use-toast";
 import marble from "@/assets/excellus-marble.jpg";
 
 const schema = z.object({
-  name: z.string().trim().min(2, "Informe seu nome").max(100),
-  email: z.string().trim().email("E-mail inválido").max(255),
-  phone: z.string().trim().min(7, "Telefone inválido").max(30),
-  project: z.string().trim().min(5, "Conte-nos um pouco mais").max(1000),
+  name: z.string().trim().min(2, "Please provide your name").max(100),
+  email: z.string().trim().email("Invalid email address").max(255),
+  phone: z.string().trim().min(7, "Invalid phone number").max(30),
+  project: z.string().trim().min(5, "Please describe your project").max(1000),
 });
 
 const TARGET_EMAIL = "remodeling@excellusgroup.com";
 
 const features = [
-  { icon: Sparkles, title: "Atendimento", text: "Personalizado" },
-  { icon: FileText, title: "Orçamento", text: "Sem Compromisso" },
-  { icon: Clock, title: "Resposta", text: "Rápida" },
+  { icon: Sparkles, title: "Service", text: "Personalized" },
+  { icon: FileText, title: "Estimate", text: "Complimentary" },
+  { icon: Clock, title: "Response", text: "Prompt" },
 ];
 
 export default function ExcellusContact() {
@@ -51,14 +51,14 @@ export default function ExcellusContact() {
 
     setLoading(true);
     try {
-      const subject = encodeURIComponent("Novo Lead — Excellus Remodeling");
+      const subject = encodeURIComponent("New Lead — Excellus Remodeling");
       const body = encodeURIComponent(
-        `Nome: ${parsed.data.name}\nE-mail: ${parsed.data.email}\nTelefone: ${parsed.data.phone}\n\nProjeto:\n${parsed.data.project}`,
+        `Name: ${parsed.data.name}\nEmail: ${parsed.data.email}\nPhone: ${parsed.data.phone}\n\nProject:\n${parsed.data.project}`,
       );
       window.location.href = `mailto:${TARGET_EMAIL}?subject=${subject}&body=${body}`;
       setSubmitted(true);
     } catch {
-      toast({ title: "Erro ao enviar", description: "Tente novamente.", variant: "destructive" });
+      toast({ title: "Error Sending", description: "Please try again.", variant: "destructive" });
     } finally {
       setLoading(false);
     }
@@ -76,14 +76,14 @@ export default function ExcellusContact() {
       <div className="relative container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           <div className="text-center md:text-left">
-            <span className="eyebrow">Orçamento Premium</span>
+            <span className="eyebrow">Request An Estimate</span>
             <h2 className="mt-5 text-2xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.1]">
-              Pronto para <span className="text-gold-gradient">Transformar</span> Seu Imóvel?
+              Ready to <span className="text-gold-gradient">Transform</span> Your Home?
             </h2>
             <div className="mt-6 gold-divider w-12 md:w-14 mx-auto md:mx-0" />
             <p className="mt-6 text-sm md:text-lg text-muted-foreground leading-relaxed font-light max-w-md mx-auto md:mx-0">
-              Preencha o formulário e nossa equipe entrará em contato para
-              criar um orçamento personalizado para você.
+              Complete the form and our team will contact you to craft a
+              personalized estimate for your project.
             </p>
  
             <div className="mt-8 grid grid-cols-3 gap-4 md:gap-6 max-w-md mx-auto md:mx-0">
@@ -103,15 +103,15 @@ export default function ExcellusContact() {
             {submitted ? (
               <div className="text-center py-12">
                 <CheckCircle2 className="h-14 w-14 text-primary mx-auto mb-6" strokeWidth={1.3} />
-                <h3 className="font-[var(--font-heading)] text-2xl font-medium text-foreground">Obrigado!</h3>
+                <h3 className="font-[var(--font-heading)] text-2xl font-medium text-foreground">Thank You!</h3>
                 <p className="mt-3 text-muted-foreground font-light">
-                  Sua solicitação foi recebida. Entraremos em contato em breve.
+                  Your request has been received. We will be in touch shortly.
                 </p>
               </div>
             ) : (
               <form onSubmit={onSubmit} noValidate className="space-y-5">
                 <div>
-                  <Label htmlFor="name" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">Nome Completo *</Label>
+                  <Label htmlFor="name" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">Full Name *</Label>
                   <Input id="name" name="name" required maxLength={100}
                     className="mt-2 h-12 bg-background/70 border-border focus-visible:ring-primary focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:shadow-[0_0_0_4px_hsl(38_45%_52%/0.12)]" />
                   {errors.name && <p className="text-xs text-destructive mt-1">{errors.name}</p>}
@@ -119,13 +119,13 @@ export default function ExcellusContact() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
-                    <Label htmlFor="email" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">E-mail *</Label>
+                    <Label htmlFor="email" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">Email *</Label>
                     <Input id="email" name="email" type="email" required maxLength={255}
                       className="mt-2 h-12 bg-background/70 border-border focus-visible:ring-primary focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:shadow-[0_0_0_4px_hsl(38_45%_52%/0.12)]" />
                     {errors.email && <p className="text-xs text-destructive mt-1">{errors.email}</p>}
                   </div>
                   <div>
-                    <Label htmlFor="phone" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">Telefone *</Label>
+                    <Label htmlFor="phone" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">Phone *</Label>
                     <Input id="phone" name="phone" type="tel" required maxLength={30}
                       className="mt-2 h-12 bg-background/70 border-border focus-visible:ring-primary focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:shadow-[0_0_0_4px_hsl(38_45%_52%/0.12)]" />
                     {errors.phone && <p className="text-xs text-destructive mt-1">{errors.phone}</p>}
@@ -133,7 +133,7 @@ export default function ExcellusContact() {
                 </div>
 
                 <div>
-                  <Label htmlFor="project" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">Conte-nos sobre seu projeto *</Label>
+                  <Label htmlFor="project" className="text-xs tracking-[0.18em] uppercase text-muted-foreground font-light">Tell us about your project *</Label>
                   <Textarea id="project" name="project" rows={5} required maxLength={1000}
                     className="mt-2 bg-background/70 border-border focus-visible:ring-primary focus-visible:ring-2 focus-visible:ring-offset-0 focus-visible:shadow-[0_0_0_4px_hsl(38_45%_52%/0.12)]" />
                   {errors.project && <p className="text-xs text-destructive mt-1">{errors.project}</p>}
@@ -144,9 +144,9 @@ export default function ExcellusContact() {
                   disabled={loading}
                   className="w-full h-14 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full text-[0.6rem] md:text-xs tracking-[0.2em] uppercase font-light shadow-[0_20px_50px_-12px_hsl(38_45%_52%/0.55)] hover:brightness-110 transition-all"
                 >
-                  {loading ? "Enviando..." : (
+                  {loading ? "Submitting..." : (
                     <span className="flex items-center justify-center gap-4">
-                      Solicitar Orçamento Premium <ArrowRight className="h-4 w-4" />
+                      Request Premium Estimate <ArrowRight className="h-4 w-4" />
                     </span>
                   )}
                 </Button>

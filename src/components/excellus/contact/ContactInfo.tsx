@@ -2,9 +2,9 @@ import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react";
 
 const infoCards = [
   { icon: Phone, label: "WhatsApp", value: "(689) 306-3140", href: "https://wa.me/16893063140" },
-  { icon: Mail, label: "E-mail", value: "remodeling@excellusgroup.com", href: "mailto:remodeling@excellusgroup.com" },
-  { icon: MapPin, label: "Localização", value: "Orlando e Regiões, FL", href: null },
-  { icon: Clock, label: "Atendimento", value: "Seg–Sex: 8h–18h · Sáb: 9h–14h", href: null },
+  { icon: Mail, label: "Email", value: "remodeling@excellusgroup.com", href: "mailto:remodeling@excellusgroup.com" },
+  { icon: MapPin, label: "Location", value: "Orlando & Surrounding Areas, FL", href: null },
+  { icon: Clock, label: "Hours", value: "Mon–Fri: 8am–6pm · Sat: 9am–2pm", href: null },
   { icon: Instagram, label: "Instagram", value: "@excellusremodeling", href: "https://instagram.com/excellusremodeling" },
 ];
 
@@ -13,9 +13,9 @@ export default function ContactInfo() {
     <section className="py-12 md:py-16 bg-secondary/25 texture-noise">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-12">
-          <span className="eyebrow">Canais de Contato</span>
+          <span className="eyebrow">Get In Touch</span>
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-light text-foreground leading-tight">
-            Sempre ao <span className="text-gold-gradient">Seu Alcance</span>
+            Always Within <span className="text-gold-gradient">Reach</span>
           </h2>
           <div className="mt-5 flex justify-center"><span className="gold-divider" /></div>
         </div>

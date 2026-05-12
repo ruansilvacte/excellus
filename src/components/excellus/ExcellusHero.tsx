@@ -2,9 +2,9 @@ import { ArrowRight, Gem, ShieldCheck, Users, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const floatingCards = [
-  { icon: Gem, title: "Acabamento Impecável", text: "Padrões de qualidade superiores" },
-  { icon: ShieldCheck, title: "Garantia de Serviço", text: "Compromisso total com seu projeto" },
-  { icon: Users, title: "Equipe Especializada", text: "Profissionais experientes e dedicados" },
+  { icon: Gem, title: "Impeccable Finishes", text: "Superior quality standards" },
+  { icon: ShieldCheck, title: "Service Guarantee", text: "Complete dedication to your project" },
+  { icon: Users, title: "Expert Team", text: "Experienced and dedicated professionals" },
 ];
 
 export default function ExcellusHero() {
@@ -42,7 +42,7 @@ export default function ExcellusHero() {
           <div className="flex items-center gap-3 mb-4 md:mb-5">
             <span className="gold-divider w-8 md:w-14" />
             <span className="eyebrow" style={{ color: "hsl(44 90% 72%)", textShadow: "0 1px 8px rgba(0,0,0,0.8)" }}>
-              Excelência · Sofisticação · Confiança
+              Excellence · Sophistication · Trust
             </span>
           </div>
  
@@ -50,16 +50,16 @@ export default function ExcellusHero() {
             className="font-[var(--font-heading)] text-2xl sm:text-5xl md:text-6xl lg:text-[3.75rem] leading-[1.1] font-normal tracking-tight text-white"
             style={{ textShadow: "0 2px 24px rgba(0,0,0,0.75), 0 1px 6px rgba(0,0,0,0.6)" }}
           >
-            Reformas de Alto Padrão em Orlando:{" "}
-            <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)", textShadow: "0 2px 16px rgba(0,0,0,0.7)" }}>Acabamento Impecável</span> e Garantia.
+            Luxury Home Remodeling in Orlando:{" "}
+            <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)", textShadow: "0 2px 16px rgba(0,0,0,0.7)" }}>Impeccable Finishes</span> and Guaranteed Service.
           </h1>
  
           <p
             className="mt-6 md:mt-5 max-w-xl text-xs md:text-base text-white leading-relaxed font-light"
             style={{ textShadow: "0 1px 10px rgba(0,0,0,0.85)" }}
           >
-            Especialistas em transformar banheiros e ambientes com padrões
-            exclusivos para imóveis exigentes em Orlando e região.
+            Experts in transforming bathrooms and living spaces with exclusive
+            standards for discerning homes in Orlando and the surrounding area.
           </p>
  
           <div className="mt-10 md:mt-9 flex flex-wrap items-center gap-5">
@@ -70,7 +70,7 @@ export default function ExcellusHero() {
               style={{ background: "linear-gradient(135deg, #b8860b 0%, #8b6508 100%)", backgroundColor: "#b8860b" }}
             >
               <a href="https://wa.me/16893063140" target="_blank" rel="noreferrer" className="flex items-center gap-3">
-                Solicite um Orçamento Premium <ArrowRight className="h-4 w-4" />
+                Request a Premium Quote <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
           </div>
@@ -101,7 +101,7 @@ export default function ExcellusHero() {
       <a
         href="#diferenciais"
         className="absolute bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/80 hover:text-primary transition-colors"
-        aria-label="Scroll para baixo"
+        aria-label="Scroll down"
       >
         <div className="h-10 w-10 rounded-full border border-white/30 flex items-center justify-center backdrop-blur">
           <ChevronDown className="h-4 w-4 animate-bounce" />

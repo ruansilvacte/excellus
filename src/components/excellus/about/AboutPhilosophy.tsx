@@ -1,9 +1,9 @@
 import marbleImg from "@/assets/excellus-marble.jpg";
 
 const phrases = [
-  "Cada escolha de material é uma declaração de intenção.",
-  "Cada linha é traçada com propósito.",
-  "Cada resultado é a expressão de um padrão irredutível.",
+  "Every material choice is a statement of intent.",
+  "Every line is drawn with purpose.",
+  "Every result is the expression of an uncompromising standard.",
 ];
 
 export default function AboutPhilosophy() {
@@ -28,13 +28,13 @@ export default function AboutPhilosophy() {
 
       <div className="relative container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="eyebrow">Nossa Filosofia</span>
+          <span className="eyebrow">Our Philosophy</span>
  
           <h2
             className="mt-6 font-[var(--font-heading)] text-2xl md:text-6xl lg:text-7xl font-light text-foreground leading-[1.1]"
           >
-            Excelência em{" "}
-            <span className="text-gold-gradient">Cada Detalhe</span>
+            Excellence in{" "}
+            <span className="text-gold-gradient">Every Detail</span>
           </h2>
  
           <div className="mt-6 flex justify-center">
@@ -42,15 +42,15 @@ export default function AboutPhilosophy() {
           </div>
  
           <p className="mt-8 text-sm md:text-xl text-muted-foreground leading-relaxed font-light max-w-2xl mx-auto">
-            Acreditamos que uma reforma de alto padrão vai muito além de materiais caros ou
-            técnicas sofisticadas. É sobre a compreensão profunda de como um espaço deve se sentir —
-            como deve impactar quem vive nele e quem o visita.
+            We believe a luxury remodel transcends expensive materials and sophisticated techniques.
+            It is about a profound understanding of how a space should feel—how it impacts
+            those who live within it and those who visit.
           </p>
  
           <p className="mt-4 text-xs md:text-base text-muted-foreground leading-relaxed font-light max-w-2xl mx-auto">
-            Nossa filosofia é simples: nenhum compromisso com a qualidade. Nenhum atalho. Nenhuma
-            solução que não seja a melhor possível. É com essa mentalidade que entregamos projetos
-            que resistem ao tempo e elevam o padrão de vida dos nossos clientes.
+            Our philosophy is simple: no compromises on quality. No shortcuts. No solution
+            that is anything less than the absolute best. With this mindset, we deliver projects
+            that withstand the test of time and elevate the lives of our clients.
           </p>
  
           {/* Phrases */}
@@ -82,11 +82,11 @@ export default function AboutPhilosophy() {
               "
             </div>
             <p className="relative font-[var(--font-heading)] text-xl md:text-3xl lg:text-4xl font-light italic text-foreground/75 leading-relaxed">
-              Não construímos apenas reformas.{" "}
+              We don't just build renovations.{" "}
               <br className="hidden md:block" />
-              Construímos{" "}
+              We build{" "}
               <span className="text-gold-gradient not-italic font-normal">
-                legados de sofisticação.
+                legacies of sophistication.
               </span>
             </p>
             <div className="mt-6 flex justify-center">

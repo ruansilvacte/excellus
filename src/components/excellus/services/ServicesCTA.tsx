@@ -34,7 +34,7 @@ export default function ServicesCTA() {
       <div className="relative container mx-auto px-4 md:px-6 text-center">
         <div className="flex items-center justify-center gap-2 md:gap-3 mb-5">
           <span className="gold-divider w-8 md:w-14" />
-          <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>Vamos Começar</span>
+          <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>Let's Begin</span>
           <span className="gold-divider w-8 md:w-14" />
         </div>
 
@@ -42,16 +42,16 @@ export default function ServicesCTA() {
           className="font-[var(--font-heading)] text-xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.1]"
           style={{ textShadow: "0 2px 24px rgba(0,0,0,0.6)" }}
         >
-          Vamos elevar seu imóvel{" "}
+          Let's elevate your property{" "}
           <br />
           <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)" }}>
-            a outro nível.
+            to the next level.
           </span>
         </h2>
 
         <p className="mt-5 md:mt-8 text-[0.65rem] md:text-lg text-white/70 font-light max-w-lg mx-auto leading-relaxed">
-          Fale com nossa equipe e receba uma consultoria personalizada,
-          sem compromisso, para o seu projeto.
+          Speak with our team and receive a complimentary, personalized consultation
+          for your project.
         </p>
 
         <div className="mt-8 md:mt-12 flex flex-wrap items-center justify-center gap-5">
@@ -65,7 +65,7 @@ export default function ServicesCTA() {
             }}
           >
             <a href="https://wa.me/16893063140" target="_blank" rel="noreferrer" className="flex items-center gap-3">
-              Solicitar Consultoria Premium <ArrowRight className="h-4 w-4" />
+              Request a Premium Consultation <ArrowRight className="h-4 w-4" />
             </a>
           </Button>
         </div>

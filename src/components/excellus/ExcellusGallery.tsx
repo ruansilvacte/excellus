@@ -6,10 +6,10 @@ import g3 from "@/assets/excellus-gallery-3.jpg";
 import g4 from "@/assets/excellus-gallery-4.jpg";
 
 const images = [
-  { src: g1, alt: "Reforma de banheiro de luxo" },
-  { src: g2, alt: "Fachada moderna premium" },
-  { src: g3, alt: "Suite master sofisticada" },
-  { src: g4, alt: "Cozinha com ilha em mármore" },
+  { src: g1, alt: "Luxury bathroom remodel" },
+  { src: g2, alt: "Premium modern facade" },
+  { src: g3, alt: "Sophisticated master suite" },
+  { src: g4, alt: "Kitchen with marble island" },
 ];
 
 export default function ExcellusGallery() {
@@ -38,9 +38,9 @@ export default function ExcellusGallery() {
     <section id="galeria" className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-8 md:mb-10">
-          <span className="eyebrow">Galeria</span>
+          <span className="eyebrow">Gallery</span>
           <h2 className="mt-4 text-2xl md:text-6xl font-light text-foreground leading-[1.05]">
-            Projetos que <span className="text-gold-gradient">Inspiram</span>
+            Projects That <span className="text-gold-gradient">Inspire</span>
           </h2>
         </div>
       </div>

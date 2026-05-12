@@ -3,33 +3,33 @@ import { Gem, Shield, Star, Users, Clock, Eye } from "lucide-react";
 const differentials = [
   {
     icon: Gem,
-    title: "Acabamento Impecável",
-    desc: "Cada superfície, cada detalhe, cada milímetro. Trabalhamos com padrões de qualidade que só encontra em projetos de alto padrão internacional.",
+    title: "Impeccable Finishes",
+    desc: "Every surface, every detail, every millimeter. Our work adheres to the quality standards found only in premier international projects.",
   },
   {
     icon: Shield,
-    title: "Gestão Completa",
-    desc: "Do planejamento ao pós-obra. Cuidamos de tudo para que você não precise se preocupar com nada além de curtir o resultado.",
+    title: "Comprehensive Management",
+    desc: "From planning to post-completion care. We manage every aspect so you can simply focus on enjoying the beautiful result.",
   },
   {
     icon: Star,
-    title: "Materiais Premium",
-    desc: "Selecionamos os melhores materiais do mercado — mármores importados, porcelanatos de alta resistência, madeiras nobres e metais sofisticados.",
+    title: "Premium Materials",
+    desc: "We meticulously select the finest materials available—imported marbles, high-durability porcelain, noble woods, and sophisticated metals.",
   },
   {
     icon: Users,
-    title: "Equipe Especializada",
-    desc: "Profissionais treinados e apaixonados pelo que fazem. Nossa equipe combina técnica apurada com sensibilidade estética refinada.",
+    title: "Expert Team",
+    desc: "Professionals trained and passionate about their craft. Our team blends technical precision with a refined aesthetic sensibility.",
   },
   {
     icon: Clock,
-    title: "Pontualidade",
-    desc: "Respeitamos prazos como um valor inegociável. Porque sabemos que seu tempo e seu lar são preciosos.",
+    title: "Punctuality",
+    desc: "We treat deadlines as an unbreakable commitment. We understand that your time and your home are precious.",
   },
   {
     icon: Eye,
-    title: "Transparência Total",
-    desc: "Orçamentos claros, comunicação constante e zero surpresas. Você acompanha cada etapa com total confiança.",
+    title: "Total Transparency",
+    desc: "Clear estimates, constant communication, and absolutely no surprises. You can follow each stage of the process with complete confidence.",
   },
 ];
 
@@ -40,17 +40,17 @@ export default function AboutDifferentials() {
  
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
-          <span className="eyebrow">Nossos Diferenciais</span>
+          <span className="eyebrow">What Sets Us Apart</span>
           <h2 className="mt-5 text-2xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.1]">
-            O que nos torna{" "}
-            <span className="text-gold-gradient">Únicos</span>
+            What Makes Us{" "}
+            <span className="text-gold-gradient">Unique</span>
           </h2>
           <div className="mt-6 flex justify-center">
             <span className="gold-divider w-12 md:w-14" />
           </div>
           <p className="mt-6 text-sm md:text-base text-muted-foreground font-light leading-relaxed">
-            Não somos apenas uma empresa de reformas. Somos parceiros dedicados
-            à transformação do seu espaço com precisão e sofisticação.
+            We are more than just a remodeling company. We are dedicated partners,
+            committed to transforming your space with precision and sophistication.
           </p>
         </div>
  

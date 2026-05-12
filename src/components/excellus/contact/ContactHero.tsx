@@ -9,7 +9,7 @@ export default function ContactHero() {
       {/* Background */}
       <img
         src={galleryImg}
-        alt="Interior luxuoso Excellus"
+        alt="Luxurious Excellus Interior"
         className="absolute inset-0 w-full h-full object-cover scale-110"
         aria-hidden="true"
       />
@@ -29,7 +29,7 @@ export default function ContactHero() {
         <div className="flex items-center gap-3 mb-6">
           <span className="gold-divider" />
           <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>
-            Atendimento Premium · Orlando, FL
+            Premium Service · Orlando, FL
           </span>
         </div>
 
@@ -37,31 +37,31 @@ export default function ContactHero() {
           className="font-[var(--font-heading)] text-5xl sm:text-6xl md:text-7xl font-light text-white leading-[1.03] max-w-3xl"
           style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7)" }}
         >
-          Vamos{" "}
+          Let's{" "}
           <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)" }}>
-            Transformar
+            Transform
           </span>{" "}
-          Seu Espaço
+          Your Space
         </h1>
 
         <p
           className="mt-8 md:mt-6 max-w-xl text-xs md:text-lg text-white/80 leading-relaxed font-light"
           style={{ textShadow: "0 1px 10px rgba(0,0,0,0.8)" }}
         >
-          Atendimento premium para projetos exclusivos em Orlando.
-          Entre em contato e receba uma consultoria personalizada sem compromisso.
+          Premium service for exclusive projects in Orlando.
+          Contact us to receive a complimentary, personalized consultation.
         </p>
       </div>
 
       <a
         href="#contato-main"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors"
-        aria-label="Ir para formulário de contato"
+        aria-label="Go to contact form"
       >
         <div className="h-10 w-10 rounded-full border border-white/30 flex items-center justify-center backdrop-blur">
           <ChevronDown className="h-4 w-4 animate-bounce" />
         </div>
-        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Falar Conosco</span>
+        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Contact Us</span>
       </a>
     </section>
   );

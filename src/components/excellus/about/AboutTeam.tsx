@@ -1,25 +1,25 @@
 const team = [
   {
     name: "Carlos Mendes",
-    role: "Fundador & Diretor",
-    specialty: "Design de Interiores · Gestão de Obras",
-    desc: "Mais de 8 anos de experiência em reformas de alto padrão. Fundou a Excellus com a visão de elevar o mercado de reformas em Orlando.",
+    role: "Founder & Director",
+    specialty: "Interior Design · Construction Management",
+    desc: "With over 8 years of experience in high-end remodeling, he founded Excellus with a vision to elevate Orlando's renovation market.",
     initials: "CM",
     gradient: "from-amber-900/80 to-stone-800/60",
   },
   {
     name: "Isabela Torres",
-    role: "Arquiteta Sênior",
-    specialty: "Arquitetura Premium · Banheiros & Cozinhas",
-    desc: "Especialista em projetos residenciais de alto padrão. Combina funcionalidade e estética com maestria singular.",
+    role: "Senior Architect",
+    specialty: "Premium Architecture · Bathrooms & Kitchens",
+    desc: "A specialist in high-end residential projects, she masterfully combines functionality and aesthetics.",
     initials: "IT",
     gradient: "from-stone-700/80 to-amber-900/50",
   },
   {
     name: "Rodrigo Lima",
-    role: "Gerente de Projetos",
-    specialty: "Logística · Prazos · Qualidade",
-    desc: "Responsável por garantir que cada projeto seja entregue no prazo e com os mais altos padrões de qualidade.",
+    role: "Project Manager",
+    specialty: "Logistics · Timelines · Quality",
+    desc: "Responsible for ensuring every project is delivered on time and to the highest standards of quality.",
     initials: "RL",
     gradient: "from-amber-800/70 to-stone-700/60",
   },
@@ -32,18 +32,18 @@ export default function AboutTeam() {
 
         {/* Header */}
         <div className="text-center max-w-xl mx-auto mb-16">
-          <span className="eyebrow">Nossa Equipe</span>
+          <span className="eyebrow">Our Team</span>
           <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.05]">
-            Os{" "}
-            <span className="text-gold-gradient">Especialistas</span>{" "}
-            por Trás dos Projetos
+            The{" "}
+            <span className="text-gold-gradient">Experts</span>{" "}
+            Behind the Projects
           </h2>
           <div className="mt-6 flex justify-center">
             <span className="gold-divider" />
           </div>
           <p className="mt-6 text-base text-muted-foreground font-light leading-relaxed">
-            Uma equipe de profissionais apaixonados, cada um com expertise única
-            e um compromisso inabalável com a excelência.
+            A team of passionate professionals, each with unique expertise
+            and an unwavering commitment to excellence.
           </p>
         </div>
 
