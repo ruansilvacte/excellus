@@ -8,13 +8,13 @@ export default function ServicesGrid() {
       <div className="container mx-auto px-6 max-w-7xl">
 
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="eyebrow">Nosso Portfólio</span>
+          <span className="eyebrow">Our Portfolio</span>
           <h2 className="mt-5 text-4xl md:text-5xl font-light text-foreground leading-[1.05]">
-            Soluções para <span className="text-gold-gradient">Transformar</span> Seu Espaço
+            Solutions to <span className="text-gold-gradient">Transform</span> Your Space
           </h2>
           <div className="mt-6 flex justify-center"><span className="gold-divider" /></div>
           <p className="mt-6 text-base text-muted-foreground font-light leading-relaxed">
-            Selecione uma especialidade abaixo para descobrir mais sobre nosso processo e detalhes de execução.
+            Select a specialty below to discover more about our process and execution details.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function ServicesGrid() {
                   {service.desc}
                 </p>
                 <div className="mt-auto flex items-center gap-2 text-xs text-primary font-medium tracking-wider uppercase group/link">
-                  Ver Detalhes
+                  View Details
                   <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>

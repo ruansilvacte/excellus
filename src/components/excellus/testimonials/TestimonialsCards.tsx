@@ -5,8 +5,8 @@ const testimonials = [
     name: "Sarah L.",
     location: "Winter Garden, FL",
     stars: 5,
-    text: "A Excellus transformou completamente nosso banheiro principal. O acabamento é impecável e a equipe tratou nossa casa com extremo cuidado e respeito. Recomendo sem reservas para qualquer pessoa que busque qualidade de verdade.",
-    project: "Reforma de Banheiro",
+    text: "Excellus completely transformed our master bathroom. The finish is impeccable, and the team treated our home with extreme care and respect. I wholeheartedly recommend them to anyone seeking true quality.",
+    project: "Bathroom Remodel",
     gradient: "from-amber-900/70 to-stone-800/50",
     initials: "SL",
   },
@@ -14,8 +14,8 @@ const testimonials = [
     name: "Marcus T.",
     location: "Lake Nona, FL",
     stars: 5,
-    text: "Profissionalismo do início ao fim. O painel ripado em LED ficou exatamente como imaginávamos — sofisticado e funcional. Nossa vacation home valorizou significativamente após o projeto.",
-    project: "Painéis Decorativos",
+    text: "Professionalism from start to finish. The slatted LED panel turned out exactly as we imagined — sophisticated and functional. Our vacation home significantly increased in value after the project.",
+    project: "Decorative Panels",
     gradient: "from-stone-700/70 to-amber-900/50",
     initials: "MT",
   },
@@ -23,8 +23,8 @@ const testimonials = [
     name: "Emma R.",
     location: "Orlando, FL",
     stars: 5,
-    text: "Sofisticação, prazo cumprido e zero dor de cabeça. A garantia oferecida nos deu total tranquilidade. Voltaremos a contratar com certeza e já indicamos para outros 3 amigos.",
-    project: "Reforma Completa",
+    text: "Sophistication, on-time completion, and zero headaches. The warranty offered gave us complete peace of mind. We will definitely hire them again and have already referred them to 3 other friends.",
+    project: "Full Renovation",
     gradient: "from-amber-800/60 to-stone-700/50",
     initials: "ER",
   },
@@ -32,8 +32,8 @@ const testimonials = [
     name: "James O.",
     location: "Horizon West, FL",
     stars: 5,
-    text: "Equipe incrível, muito atenciosa e detalhista. O banheiro master ficou digno de revista de arquitetura. Superou todas as nossas expectativas. Trabalho impecável.",
-    project: "Banheiro Master",
+    text: "Incredible team, very attentive and detail-oriented. The master bathroom looks like it's from an architecture magazine. It exceeded all our expectations. Impeccable work.",
+    project: "Master Bathroom",
     gradient: "from-stone-800/70 to-amber-900/55",
     initials: "JO",
   },
@@ -41,8 +41,8 @@ const testimonials = [
     name: "Carolina M.",
     location: "Winter Park, FL",
     stars: 5,
-    text: "Desde o primeiro contato, percebemos que estávamos em mãos profissionais. O resultado da cozinha integrada é simplesmente lindo. Trabalho de altíssimo padrão.",
-    project: "Cozinha Integrada",
+    text: "From the first contact, we realized we were in professional hands. The result of the integrated kitchen is simply beautiful. Work of the highest standard.",
+    project: "Integrated Kitchen",
     gradient: "from-amber-900/65 to-stone-700/55",
     initials: "CM",
   },
@@ -50,8 +50,8 @@ const testimonials = [
     name: "Robert A.",
     location: "Lake Mary, FL",
     stars: 5,
-    text: "Contratamos para reforma total de dois banheiros e os pisos de toda a casa. O resultado é impressionante. Qualidade e detalhamento que raramente se vê no mercado.",
-    project: "Reforma Residencial",
+    text: "We hired them for a complete renovation of two bathrooms and the flooring throughout the house. The result is impressive. Quality and detailing rarely seen in the market.",
+    project: "Residential Renovation",
     gradient: "from-stone-700/65 to-amber-800/55",
     initials: "RA",
   },
@@ -62,13 +62,13 @@ export default function TestimonialsCards() {
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="eyebrow">Depoimentos Premium</span>
+          <span className="eyebrow">Premium Testimonials</span>
           <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.05]">
-            Histórias de <span className="text-gold-gradient">Transformação</span>
+            Stories of <span className="text-gold-gradient">Transformation</span>
           </h2>
           <div className="mt-6 flex justify-center"><span className="gold-divider" /></div>
           <p className="mt-6 text-base text-muted-foreground font-light leading-relaxed">
-            Cada depoimento é a expressão de um projeto entregue com excelência e um cliente cujas expectativas foram superadas.
+            Each testimonial is an expression of a project delivered with excellence and a client whose expectations were exceeded.
           </p>
         </div>
 

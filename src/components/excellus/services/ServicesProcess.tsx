@@ -4,26 +4,26 @@ const steps = [
   {
     icon: MessageSquare,
     step: "01",
-    title: "Consultoria",
-    desc: "Reunião inicial para entender sua visão, necessidades e orçamento. Apresentamos referências e possibilidades para alinhar expectativas e criar a base do projeto.",
+    title: "Consultation",
+    desc: "Initial meeting to understand your vision, needs, and budget. We present references and possibilities to align expectations and build the project's foundation.",
   },
   {
     icon: Ruler,
     step: "02",
-    title: "Planejamento",
-    desc: "Desenvolvimento do projeto detalhado com seleção de materiais, definição de cronograma e orçamento transparente. Cada detalhe é pensado antes da execução.",
+    title: "Planning",
+    desc: "Detailed project development with material selection, schedule definition and transparent budget. Every detail is considered before execution.",
   },
   {
     icon: HardHat,
     step: "03",
-    title: "Execução",
-    desc: "Nossa equipe especializada inicia a obra com rigor técnico e respeito ao seu espaço. Comunicação constante e atualizações regulares para sua tranquilidade.",
+    title: "Execution",
+    desc: "Our specialized team begins the work with technical rigor and respect for your space. Constant communication and regular updates for your peace of mind.",
   },
   {
     icon: Sparkles,
     step: "04",
-    title: "Finalização Premium",
-    desc: "Vistoria minuciosa de acabamento, limpeza impecável e entrega formal do projeto. Garantia de serviço e acompanhamento pós-obra inclusos.",
+    title: "Premium Completion",
+    desc: "Thorough finishing inspection, impeccable cleaning, and formal project delivery. Service warranty and post-completion follow-up included.",
   },
 ];
 
@@ -34,17 +34,17 @@ export default function ServicesProcess() {
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="eyebrow">Nosso Processo</span>
+          <span className="eyebrow">Our Process</span>
           <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.05]">
-            Do Sonho à{" "}
-            <span className="text-gold-gradient">Realidade</span>
+            From Dream to{" "}
+            <span className="text-gold-gradient">Reality</span>
           </h2>
           <div className="mt-6 flex justify-center">
             <span className="gold-divider" />
           </div>
           <p className="mt-6 text-base text-muted-foreground font-light leading-relaxed">
-            Um processo cuidadosamente estruturado para garantir que cada projeto
-            seja entregue com perfeição, no prazo e sem surpresas.
+            A carefully structured process to ensure each project
+            is delivered with perfection, on time and without surprises.
           </p>
         </div>
 

@@ -5,11 +5,11 @@ import g3 from "@/assets/excellus-gallery-3.jpg";
 import about from "@/assets/excellus-about.jpg";
 
 const materials = [
-  { label: "Mármore & Pedras Naturais", img: marbleImg, desc: "Italianos, brasileiros e importados de todo o mundo." },
-  { label: "Porcelanato de Alta Resistência", img: g1, desc: "Marcas premium nacionais e importadas, em grandes formatos." },
-  { label: "Madeiras Nobres", img: g2, desc: "Revestimentos, decks e pisos em espécies selecionadas." },
-  { label: "Metais Sofisticados", img: g3, desc: "Torneiras, puxadores e acabamentos em ouro, preto fosco e inox premium." },
-  { label: "Iluminação LED Premium", img: about, desc: "Fitas, perfis e luminárias de alta performance e design exclusivo." },
+  { label: "Marble & Natural Stones", img: marbleImg, desc: "Italian, Brazilian, and imported from around the world." },
+  { label: "High-Resistance Porcelain", img: g1, desc: "Premium national and imported brands, in large formats." },
+  { label: "Noble Woods", img: g2, desc: "Claddings, decks, and flooring in selected species." },
+  { label: "Sophisticated Metals", img: g3, desc: "Faucets, handles, and finishes in gold, matte black, and premium stainless steel." },
+  { label: "Premium LED Lighting", img: about, desc: "High-performance and exclusive design strips, profiles, and luminaires." },
 ];
 
 export default function ServicesMaterials() {
@@ -19,18 +19,18 @@ export default function ServicesMaterials() {
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="eyebrow">Materiais Selecionados</span>
+          <span className="eyebrow">Selected Materials</span>
           <h2 className="mt-5 text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.05]">
-            Apenas o{" "}
-            <span className="text-gold-gradient">Melhor</span>{" "}
-            para Seu Projeto
+            Only the{" "}
+            <span className="text-gold-gradient">Best</span>{" "}
+            for Your Project
           </h2>
           <div className="mt-6 flex justify-center">
             <span className="gold-divider" />
           </div>
           <p className="mt-6 text-base text-muted-foreground font-light leading-relaxed">
-            Trabalhamos exclusivamente com materiais de alto padrão, selecionados
-            rigorosamente para garantir beleza, durabilidade e sofisticação.
+            We work exclusively with high-end materials, rigorously selected
+            to guarantee beauty, durability, and sophistication.
           </p>
         </div>
 

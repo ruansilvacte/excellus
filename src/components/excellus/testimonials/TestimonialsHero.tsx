@@ -12,23 +12,23 @@ export default function TestimonialsHero() {
       <div className="relative container mx-auto px-4 md:px-6 pt-28 md:pt-36 pb-32 md:pb-12 animate-reveal">
         <div className="flex items-center gap-3 mb-5 md:mb-6">
           <span className="gold-divider w-8 md:w-14" />
-          <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>Autoridade · Exclusividade · Confiança</span>
+          <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>Authority · Exclusivity · Trust</span>
         </div>
         <h1 className="font-[var(--font-heading)] text-2xl md:text-7xl font-light text-white leading-[1.03] max-w-3xl" style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7)" }}>
-          A Confiança de{" "}
-          <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)" }}>Clientes Exigentes</span>
+          The Trust of{" "}
+          <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)" }}>Demanding Clients</span>
         </h1>
         <p className="mt-8 md:mt-6 max-w-xl text-xs md:text-lg text-white/80 leading-relaxed font-light" style={{ textShadow: "0 1px 10px rgba(0,0,0,0.8)" }}>
-          Projetos transformados com excelência, sofisticação e atenção absoluta aos detalhes.
-          Veja o que nossos clientes dizem sobre a experiência Excellus.
+          Projects transformed with excellence, sophistication, and absolute attention to detail.
+          See what our clients say about the Excellus experience.
         </p>
       </div>
 
-      <a href="#stats" className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors" aria-label="Ver depoimentos">
+      <a href="#stats" className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors" aria-label="View testimonials">
         <div className="h-10 w-10 rounded-full border border-white/30 flex items-center justify-center backdrop-blur">
           <ChevronDown className="h-4 w-4 animate-bounce" />
         </div>
-        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Depoimentos</span>
+        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Testimonials</span>
       </a>
     </section>
   );

@@ -9,75 +9,75 @@ import faq from "@/assets/faq-banner.jpg";
 
 export const servicesData = [
   {
-    id: "banheiros",
-    title: "Banheiros & Cozinhas",
-    desc: "Ambientes funcionais e sofisticados que unem design contemporâneo com materiais de altíssimo padrão. Cada projeto é único, pensado para superar expectativas.",
-    longDesc: "Transformamos banheiros e cozinhas em espaços de puro requinte e funcionalidade. Trabalhamos com pedras naturais, bancadas esculpidas, marcenaria de alto nível e metais exclusivos para garantir um resultado impecável.",
+    id: "bathrooms",
+    title: "Bathrooms & Kitchens",
+    desc: "Functional and sophisticated environments that combine contemporary design with the highest quality materials. Each project is unique, designed to exceed expectations.",
+    longDesc: "We transform bathrooms and kitchens into spaces of pure refinement and functionality. We work with natural stones, sculpted countertops, high-end carpentry, and exclusive metals to ensure an impeccable result.",
     img: g1,
-    tag: "Especialidade Principal",
-    features: ["Demolição e preparação cuidadosa", "Instalação de hidráulica e elétrica", "Assentamento de porcelanato e mármore", "Instalação de bancadas e armários", "Acabamento premium"]
+    tag: "Main Specialty",
+    features: ["Careful demolition and preparation", "Plumbing and electrical installation", "Porcelain and marble laying", "Countertop and cabinet installation", "Premium finish"]
   },
   {
-    id: "pisos",
-    title: "Pisos & Revestimentos",
-    desc: "Instalação especializada de porcelanato, mármore, laminado, LVP e outros materiais premium. Acabamento perfeito que valoriza e diferencia seu imóvel.",
-    longDesc: "A base de todo ambiente sofisticado está no seu piso. Realizamos instalações precisas de diversos tipos de materiais, focando sempre no alinhamento perfeito, paginação inteligente e durabilidade extrema.",
+    id: "flooring",
+    title: "Flooring & Coatings",
+    desc: "Specialized installation of porcelain, marble, laminate, LVP, and other premium materials. Perfect finish that enhances and differentiates your property.",
+    longDesc: "The foundation of every sophisticated environment lies in its flooring. We perform precise installations of various types of materials, always focusing on perfect alignment, intelligent layout, and extreme durability.",
     img: g2,
-    tag: "Alta Precisão",
-    features: ["Nivelamento e preparação do contrapiso", "Instalação de porcelanato em grandes formatos", "Assentamento de mármore e pedras", "Instalação de pisos vinílicos (LVP)", "Rodapés exclusivos"]
+    tag: "High Precision",
+    features: ["Subfloor leveling and preparation", "Installation of large format porcelain", "Laying of marble and stones", "Installation of luxury vinyl plank (LVP) flooring", "Exclusive baseboards"]
   },
   {
     id: "drywall",
     title: "Drywall",
-    desc: "Soluções em drywall para divisórias, forros, bancadas e muito mais. Instalação técnica com acabamento impecável e agilidade no cronograma.",
-    longDesc: "Criamos novos espaços e transformamos a estrutura de ambientes com soluções em drywall rápidas, limpas e altamente resistentes. Perfeito para divisórias acústicas, tetos rebaixados e nichos decorativos.",
+    desc: "Drywall solutions for partitions, ceilings, countertops, and much more. Technical installation with an impeccable finish and schedule agility.",
+    longDesc: "We create new spaces and transform the structure of environments with fast, clean, and highly resistant drywall solutions. Perfect for acoustic partitions, suspended ceilings, and decorative niches.",
     img: about,
-    tag: "Execução Rápida",
-    features: ["Paredes e divisórias", "Forros e rebaixamentos", "Nichos e sancas iluminadas", "Isolamento acústico", "Acabamento liso pronto para pintura"]
+    tag: "Fast Execution",
+    features: ["Walls and partitions", "Ceilings and suspended ceilings", "Niches and illuminated coves", "Sound insulation", "Smooth finish ready for painting"]
   },
   {
-    id: "pintura",
-    title: "Pintura Premium",
-    desc: "Texturas, acabamentos especiais e cores selecionadas com expertise. Transformamos paredes em elementos de design com técnicas refinadas.",
-    longDesc: "A pintura é a alma do acabamento. Utilizamos tintas de alta performance e técnicas exclusivas para entregar paredes sem imperfeições, texturas sofisticadas e cores que trazem vida e luxo ao ambiente.",
+    id: "painting",
+    title: "Premium Painting",
+    desc: "Textures, special finishes, and expertly selected colors. We transform walls into design elements with refined techniques.",
+    longDesc: "Painting is the soul of the finish. We use high-performance paints and exclusive techniques to deliver flawless walls, sophisticated textures, and colors that bring life and luxury to the environment.",
     img: g3,
-    tag: "Transformação Visual",
-    features: ["Preparação intensiva e lixamento", "Pintura lisa e sem marcas", "Texturas decorativas (cimento queimado, etc)", "Pintura de portas e guarnições", "Proteção total do ambiente"]
+    tag: "Visual Transformation",
+    features: ["Intensive preparation and sanding", "Smooth, mark-free painting", "Decorative textures (concrete, etc.)", "Door and trim painting", "Total environment protection"]
   },
   {
-    id: "paineis",
-    title: "Painéis Decorativos",
-    desc: "Painéis ripados, mosaicos, pedras naturais e iluminação LED integrada. Elementos que criam atmosferas únicas e memoráveis em qualquer ambiente.",
-    longDesc: "Painéis são pontos focais que definem a identidade do espaço. Criamos designs personalizados usando madeira, pedra e composições modernas que atraem olhares e valorizam a arquitetura.",
+    id: "panels",
+    title: "Decorative Panels",
+    desc: "Slatted panels, mosaics, natural stones, and integrated LED lighting. Elements that create unique and memorable atmospheres in any environment.",
+    longDesc: "Panels are focal points that define the identity of the space. We create custom designs using wood, stone, and modern compositions that attract attention and enhance the architecture.",
     img: marble,
-    tag: "Design Exclusivo",
-    features: ["Painéis ripados em madeira nobre", "Revestimentos em pedra natural 3D", "Integração com iluminação LED", "Escondimento de cabos e fiações", "Designs exclusivos sob medida"]
+    tag: "Exclusive Design",
+    features: ["Noble wood slatted panels", "3D natural stone cladding", "Integration with LED lighting", "Cable and wiring concealment", "Custom exclusive designs"]
   },
   {
-    id: "iluminacao",
-    title: "Iluminação",
-    desc: "Projetos luminotécnicos que criam atmosferas distintas para cada ambiente. Tecnologia LED de última geração com controle inteligente de cenas.",
-    longDesc: "A luz certa transforma qualquer espaço. Desenvolvemos soluções luminotécnicas completas que valorizam a decoração, oferecem conforto visual e trazem modernidade através de automação.",
+    id: "lighting",
+    title: "Lighting",
+    desc: "Lighting projects that create distinct atmospheres for each environment. Latest generation LED technology with intelligent scene control.",
+    longDesc: "The right light transforms any space. We develop complete lighting solutions that enhance decoration, offer visual comfort, and bring modernity through automation.",
     img: hero,
-    tag: "Atmosfera Premium",
-    features: ["Perfis de LED lineares", "Spots e dicróicas direcionais", "Iluminação indireta em sancas", "Automação e controle inteligente", "Lustres e pendentes de luxo"]
+    tag: "Premium Atmosphere",
+    features: ["Linear LED profiles", "Directional spots and dichroic lamps", "Indirect lighting in coves", "Automation and intelligent control", "Luxury chandeliers and pendants"]
   },
   {
-    id: "ambientes",
-    title: "Ambientes Integrados",
-    desc: "Planta aberta, salas integradas, cozinhas americanas. Criamos espaços fluidos que ampliam a sensação de amplitude e sofisticação.",
-    longDesc: "Derrubamos barreiras visuais para criar espaços fluidos e contemporâneos. Transformamos residências antigas em conceitos abertos que promovem a convivência e modernizam completamente o fluxo da casa.",
+    id: "integrated-spaces",
+    title: "Integrated Spaces",
+    desc: "Open plan, integrated living rooms, American kitchens. We create fluid spaces that enhance the sense of spaciousness and sophistication.",
+    longDesc: "We break down visual barriers to create fluid and contemporary spaces. We transform old residences into open concepts that promote coexistence and completely modernize the flow of the house.",
     img: g4,
-    tag: "Conceito Moderno",
-    features: ["Remoção de paredes (não estruturais)", "Unificação de pisos", "Criação de ilhas e penínsulas", "Otimização do fluxo de circulação", "Harmonização de estilos"]
+    tag: "Modern Concept",
+    features: ["Wall removal (non-structural)", "Floor unification", "Creation of islands and peninsulas", "Optimization of circulation flow", "Harmonization of styles"]
   },
   {
-    id: "acabamentos",
-    title: "Acabamentos High-End",
-    desc: "O toque final que faz toda a diferença. Rodapés, molduras, silicones, pintura de detalhe e toda a refinada etapa de acabamento executada com maestria.",
-    longDesc: "É no detalhe que a verdadeira qualidade se mostra. Nossa equipe especializada cuida de todos os arremates finais com precisão cirúrgica para que não haja nenhuma imperfeição no resultado.",
+    id: "high-end-finishes",
+    title: "High-End Finishes",
+    desc: "The final touch that makes all the difference. Baseboards, moldings, silicones, detailed painting, and all the refined finishing stages executed with mastery.",
+    longDesc: "It's in the detail that true quality is shown. Our specialized team takes care of all the final touches with surgical precision to ensure no imperfection in the result.",
     img: faq,
-    tag: "Qualidade Superior",
-    features: ["Instalação de rodapés altos", "Molduras e boiseries", "Selagem e calafetagem perfeitas", "Limpeza fina pós-obra", "Revisão detalhada"]
+    tag: "Superior Quality",
+    features: ["Installation of tall baseboards", "Moldings and boiseries", "Perfect sealing and caulking", "Fine post-construction cleaning", "Detailed review"]
   },
 ];
