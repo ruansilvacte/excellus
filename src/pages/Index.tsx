@@ -16,8 +16,8 @@ export default function Example() {
     <div className="min-h-screen bg-background text-foreground">
       <SeoHead
         slug="/"
-        fallbackTitle="Excellus Remodeling — Reformas de Alto Padrão em Orlando"
-        fallbackDescription="Reformas de alto padrão em Orlando: banheiros, painéis exclusivos e acabamentos impecáveis com garantia. Solicite seu orçamento premium."
+        fallbackTitle="Excellus Remodeling — High-End Renovations in Orlando"
+        fallbackDescription="Premium remodeling in Orlando: bathrooms, custom paneling, and impeccable finishes — guaranteed. Request your premium quote."
       />
       <ExcellusHeader />
       <main>

@@ -5,31 +5,31 @@ import { Clock, Home, Star } from "lucide-react";
 
 const cases = [
   {
-    title: "Banheiro Master • Winter Garden",
-    type: "Reforma de Banheiro",
-    time: "3 semanas",
-    result: "Valorização estimada de 15%",
+    title: "Master Bathroom • Winter Garden",
+    type: "Bathroom Remodel",
+    time: "3 weeks",
+    result: "Estimated property value increase of 15%",
     stars: 5,
     img: g1,
-    desc: "Reforma completa com mármore importado, box de vidro fumê, banheira de imersão e iluminação LED integrada ao teto rebaixado.",
+    desc: "Complete renovation with imported marble, smoked glass shower enclosure, freestanding tub, and LED lighting integrated into the dropped ceiling.",
   },
   {
-    title: "Cozinha Integrada • Lake Nona",
-    type: "Cozinha + Sala",
-    time: "5 semanas",
-    result: "Ambiente 40% maior visualmente",
+    title: "Integrated Kitchen • Lake Nona",
+    type: "Kitchen + Living Room",
+    time: "5 weeks",
+    result: "Visually 40% larger space",
     stars: 5,
     img: g2,
-    desc: "Integração de cozinha e sala com ilha central em quartzo, painel ripado como divisória decorativa e iluminação pendente premium.",
+    desc: "Kitchen and living room integration with a central quartz island, slatted panel as a decorative divider, and premium pendant lighting.",
   },
   {
-    title: "Painéis e Pisos • Orlando",
-    type: "Revestimentos Completos",
-    time: "2 semanas",
-    result: "Estética completamente renovada",
+    title: "Panels and Flooring • Orlando",
+    type: "Complete Coverings",
+    time: "2 weeks",
+    result: "Completely renewed aesthetic",
     stars: 5,
     img: g3,
-    desc: "Instalação de porcelanato grande formato, painel ripado em madeira natural e rodapés em perfil metálico sofisticado.",
+    desc: "Installation of large format porcelain tiles, natural wood slatted panel, and sophisticated metallic profile baseboards.",
   },
 ];
 
@@ -38,9 +38,9 @@ export default function TestimonialsCases() {
     <section className="py-12 md:py-16 bg-secondary/25 texture-noise">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-16">
-          <span className="eyebrow">Cases de Sucesso</span>
+          <span className="eyebrow">Success Stories</span>
           <h2 className="mt-4 text-4xl md:text-5xl font-light text-foreground leading-tight">
-            Projetos que <span className="text-gold-gradient">Inspiram</span>
+            Projects that <span className="text-gold-gradient">Inspire</span>
           </h2>
           <div className="mt-5 flex justify-center"><span className="gold-divider" /></div>
         </div>
@@ -69,14 +69,14 @@ export default function TestimonialsCases() {
                   <div className="bg-secondary/40 rounded-xl p-4">
                     <div className="flex items-center gap-2 mb-1">
                       <Clock className="h-3.5 w-3.5 text-primary" strokeWidth={1.4} />
-                      <span className="text-[0.6rem] tracking-[0.2em] uppercase text-muted-foreground font-medium">Duração</span>
+                      <span className="text-[0.6rem] tracking-[0.2em] uppercase text-muted-foreground font-medium">Duration</span>
                     </div>
                     <div className="text-sm font-medium text-foreground">{c.time}</div>
                   </div>
                   <div className="bg-secondary/40 rounded-xl p-4">
                     <div className="flex items-center gap-2 mb-1">
                       <Star className="h-3.5 w-3.5 text-primary" strokeWidth={1.4} />
-                      <span className="text-[0.6rem] tracking-[0.2em] uppercase text-muted-foreground font-medium">Resultado</span>
+                      <span className="text-[0.6rem] tracking-[0.2em] uppercase text-muted-foreground font-medium">Result</span>
                     </div>
                     <div className="text-sm font-medium text-foreground">{c.result}</div>
                   </div>

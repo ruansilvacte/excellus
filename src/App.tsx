@@ -58,16 +58,20 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Example />} />
+            {/* English routes (primary) */}
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/:id" element={<ServiceDetailPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/testimonials" element={<TestimonialsPage />} />
+            {/* Legacy PT aliases */}
             <Route path="/sobre" element={<AboutPage />} />
             <Route path="/servicos" element={<ServicesPage />} />
             <Route path="/servicos/:id" element={<ServiceDetailPage />} />
             <Route path="/contato" element={<ContactPage />} />
             <Route path="/depoimentos" element={<TestimonialsPage />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/partnerships" element={<Partnerships />} />
             <Route path="/careers" element={<Careers />} />

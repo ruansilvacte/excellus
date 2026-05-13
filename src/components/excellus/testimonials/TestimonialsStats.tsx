@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { Award, Users, ThumbsUp, BadgeCheck } from "lucide-react";
 
 const stats = [
-  { icon: Award, value: 120, suffix: "+", label: "Projetos Entregues" },
-  { icon: ThumbsUp, value: 98, suffix: "%", label: "Satisfação dos Clientes" },
-  { icon: Users, value: 5, suffix: "", label: "Anos de Experiência" },
-  { icon: BadgeCheck, value: 100, suffix: "%", label: "Compromisso Premium" },
+  { icon: Award, value: 120, suffix: "+", label: "Projects Delivered" },
+  { icon: ThumbsUp, value: 98, suffix: "%", label: "Client Satisfaction" },
+  { icon: Users, value: 5, suffix: "", label: "Years of Experience" },
+  { icon: BadgeCheck, value: 100, suffix: "%", label: "Premium Commitment" },
 ];
 
 function useCountUp(target: number, active: boolean, duration = 2000) {
@@ -30,6 +30,7 @@ function StatCard({ icon: Icon, value, suffix, label }: typeof stats[0]) {
   const count = useCountUp(value, active);
 
   useEffect(() => {
+    // Observer for counting animation when the component is in view
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setActive(true); }, { threshold: 0.4 });
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
@@ -53,9 +54,9 @@ export default function TestimonialsStats() {
     <section id="stats" className="py-12 md:py-16 bg-secondary/25 texture-noise">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-xl mx-auto mb-14">
-          <span className="eyebrow">Números que Falam</span>
+          <span className="eyebrow">Numbers That Speak</span>
           <h2 className="mt-4 text-4xl md:text-5xl font-light text-foreground leading-tight">
-            Nossa <span className="text-gold-gradient">Trajetória</span> em Números
+            Our <span className="text-gold-gradient">Journey</span> in Numbers
           </h2>
           <div className="mt-5 flex justify-center"><span className="gold-divider" /></div>
         </div>

@@ -11,7 +11,7 @@ export default function ServicesHero() {
       {/* Background */}
       <img
         src={galleryImg}
-        alt="Reforma de alto padrão Excellus"
+        alt="Excellus High-end Renovation"
         className="absolute inset-0 w-full h-full object-cover scale-110"
         aria-hidden="true"
       />
@@ -37,7 +37,7 @@ export default function ServicesHero() {
           <div className="flex items-center gap-3 mb-4 md:mb-6">
             <span className="gold-divider w-8 md:w-14" />
             <span className="eyebrow" style={{ color: "hsl(44 90% 72%)" }}>
-              Nossos Serviços · Alta Performance
+              Our Services · High Performance
             </span>
           </div>
 
@@ -45,11 +45,11 @@ export default function ServicesHero() {
             className="font-[var(--font-heading)] text-2xl md:text-7xl font-light leading-[1.1] text-white tracking-tight"
             style={{ textShadow: "0 2px 24px rgba(0,0,0,0.75), 0 1px 6px rgba(0,0,0,0.6)" }}
           >
-            Reformas de Alto Padrão{" "}
+            High-End Renovations{" "}
             <br className="hidden md:block" />
-            para{" "}
+            for{" "}
             <span style={{ fontStyle: "italic", color: "hsl(44 90% 72%)" }}>
-              Ambientes Exclusivos
+              Exclusive Environments
             </span>
           </h1>
 
@@ -57,8 +57,8 @@ export default function ServicesHero() {
             className="mt-6 md:mt-7 max-w-xl text-xs md:text-lg text-white/80 leading-relaxed font-light"
             style={{ textShadow: "0 1px 10px rgba(0,0,0,0.85)" }}
           >
-            Transformamos residências em espaços sofisticados, funcionais e valorizados.
-            Cada serviço executado com maestria e atenção absoluta aos detalhes.
+            We transform residences into sophisticated, functional, and valued spaces.
+            Each service is executed with mastery and absolute attention to detail.
           </p>
  
           <div className="mt-10 md:mt-10">
@@ -69,7 +69,7 @@ export default function ServicesHero() {
               style={{ background: "linear-gradient(135deg, #b8860b 0%, #8b6508 100%)" }}
             >
               <a href="https://wa.me/16893063140" target="_blank" rel="noreferrer" className="flex items-center gap-3">
-                Solicite um Orçamento <ArrowRight className="h-4 w-4" />
+                Request a Quote <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
           </div>
@@ -79,12 +79,12 @@ export default function ServicesHero() {
       <a
         href="#servicos-grid"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-primary transition-colors"
-        aria-label="Ver serviços"
+        aria-label="View services"
       >
         <div className="h-10 w-10 rounded-full border border-white/30 flex items-center justify-center backdrop-blur">
           <ChevronDown className="h-4 w-4 animate-bounce" />
         </div>
-        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Explorar</span>
+        <span className="text-[0.6rem] tracking-[0.4em] uppercase font-light">Explore</span>
       </a>
     </section>
   );
