@@ -5,39 +5,40 @@
 
 @layer base {
   :root {
-    /* Premium light luxury palette — warm white / champagne */
-    --background: 36 30% 97%;
-    --foreground: 30 12% 14%;
+    /* New Creation Home Solutions — premium, professional */
+    --background: 0 0% 100%;
+    --foreground: 211 80% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 30 12% 14%;
+    --card-foreground: 211 80% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 12% 14%;
+    --popover-foreground: 211 80% 13%;
 
-    /* Refined gold */
-    --primary: 38 45% 52%;
+    /* Deep navy #07213D */
+    --primary: 211 80% 13%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 36 22% 93%;
-    --secondary-foreground: 30 12% 14%;
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 211 80% 13%;
 
-    --muted: 36 18% 94%;
-    --muted-foreground: 30 8% 42%;
+    --muted: 210 25% 95%;
+    --muted-foreground: 211 20% 38%;
 
-    --accent: 38 45% 52%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent gold #F9E68F */
+    --accent: 49 92% 77%;
+    --accent-foreground: 211 80% 13%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 18% 88%;
-    --input: 35 18% 90%;
-    --ring: 38 45% 52%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 211 80% 13%;
 
     --radius: 0.75rem;
 
-    --font-heading: 'Cormorant Garamond', serif;
+    --font-heading: 'Manrope', 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
 
     /* Premium gradients & shadows — champagne + amber + bronze metallic */
