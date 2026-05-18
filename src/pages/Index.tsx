@@ -1,37 +1,37 @@
-import ExcellusHeader from "@/components/excellus/ExcellusHeader";
-import ExcellusHero from "@/components/excellus/ExcellusHero";
-import ExcellusDifferentials from "@/components/excellus/ExcellusDifferentials";
-import ExcellusAbout from "@/components/excellus/ExcellusAbout";
-import ExcellusServices from "@/components/excellus/ExcellusServices";
-import ExcellusDetails from "@/components/excellus/ExcellusDetails";
-import ExcellusGallery from "@/components/excellus/ExcellusGallery";
-import ExcellusTestimonials from "@/components/excellus/ExcellusTestimonials";
-import ExcellusSocialAreas from "@/components/excellus/ExcellusSocialAreas";
-import ExcellusContact from "@/components/excellus/ExcellusContact";
-import ExcellusFooter from "@/components/excellus/ExcellusFooter";
+import { useState } from "react";
+import HomeHeader from "./home/components/HomeHeader";
+import HomeHero from "./home/components/HomeHero";
+import HomeDifferentials from "./home/components/HomeDifferentials";
+import HomeServices from "./home/components/HomeServices";
+import HomeGallery from "./home/components/HomeGallery";
+import HomeTestimonials from "./home/components/HomeTestimonials";
+import HomeCta from "./home/components/HomeCta";
+import HomeFooter from "./home/components/HomeFooter";
+import QuoteModal from "./home/components/QuoteModal";
 import SeoHead from "@/components/SeoHead";
 
-export default function Example() {
+export default function Index() {
+  const [open, setOpen] = useState(false);
+  const onQuote = () => setOpen(true);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SeoHead
         slug="/"
-        fallbackTitle="Excellus Remodeling — High-End Renovations in Orlando"
-        fallbackDescription="Premium remodeling in Orlando: bathrooms, custom paneling, and impeccable finishes — guaranteed. Request your premium quote."
+        fallbackTitle="New Creation Home Solutions — Instalação e Acabamento de Pisos em NJ, NY e PA"
+        fallbackDescription="Excelência em instalação e acabamento de pisos. 14 anos de experiência em projetos residenciais e comerciais em New Jersey, Nova York e Pensilvânia."
       />
-      <ExcellusHeader />
+      <HomeHeader onQuote={onQuote} />
       <main>
-        <ExcellusHero />
-        <ExcellusDifferentials />
-        <ExcellusAbout />
-        <ExcellusServices />
-        <ExcellusDetails />
-        <ExcellusGallery />
-        <ExcellusTestimonials />
-        <ExcellusSocialAreas />
-        <ExcellusContact />
+        <HomeHero onQuote={onQuote} />
+        <HomeDifferentials />
+        <HomeServices onQuote={onQuote} />
+        <HomeGallery />
+        <HomeTestimonials />
+        <HomeCta onQuote={onQuote} />
       </main>
-      <ExcellusFooter />
+      <HomeFooter />
+      <QuoteModal open={open} onOpenChange={setOpen} />
     </div>
   );
 }
